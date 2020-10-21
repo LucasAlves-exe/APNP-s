@@ -1,0 +1,20 @@
+{
+  "name": "sistemaweb",
+  "version": "1.0.0",
+  "description": "sistema web par gerencimento de APNP's",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "APNP",
+    "sistema",
+    "web",
+    "gerenciamento"
+  ],
+  "author": "Lucas Alves",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
