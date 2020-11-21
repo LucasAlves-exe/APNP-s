@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>usuarios</title> 
+
+    <style>
+        table,td,th {
+            border: 1px solid black;
+        }
+        th{
+            font-weight: bolder ;
+        }
+        td,th{
+            padding: 5px;
+        }
+        li a{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lista de usuarios</h1>
+    <ul>
+        <li><a href="/add">Adicionar</a></li>
+        <li><a href="/">listar</a></li>
+    </ul>
+    <form method="POST">
+        Pesquisar: <input type="text" name="txtPesquisa" placeholder="Pesquisar">
+        <input type="submit" value="Pesquisar">

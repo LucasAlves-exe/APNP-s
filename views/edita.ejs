@@ -1,0 +1,11 @@
+<%-include('cabecalho.ejs')%>
+
+    <form method="POST">
+        id:<input type="text" name="txtId" readonly value="<%=usuario._id%>"> 
+        Nome:<input type="text" name="txtNome" placeholder="nome" value="<%=usuario.nome%>"><br>
+        email:<input type="email" name="txtEmail" placeholder="email" value="<%=usuario.email%>"><br>
+        senha:<input type="password" name="txtSenha" placeholder="senha" value="<%=usuario._senha%>"><br>
+        foto:<input type="file" name="txtFoto" value=""><br>
+        <input type="submit" name="adicionar">
+    </form>
+    <%-include('rodape.ejs')%>

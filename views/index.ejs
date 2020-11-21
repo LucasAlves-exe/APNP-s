@@ -1,0 +1,27 @@
+<%-include('cabecalho.ejs')%>
+    </form>
+    <table>
+        <tr>
+            <th>IDs</th>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Foto</th>
+            <th>Deletar</th>
+            <th>Editar</th>
+        </tr>
+            <%for(usuario of usuarios){%>
+        <tr>
+            <td><%=usuario._id%></td>
+            <td><%=usuario.nome%></td>
+            <td><%=usuario.email%></td>
+            <td><%=usuario.foto%></td>
+            <td>
+                <a href="/del/<%=usuario._id%>">deletar</a>
+            </td>
+            <td>
+                <a href="/edit/<%=usuario._id%>">editar</a>
+            </td>
+        </tr>
+        <% } %>
+    </table>
+    <%-include('rodape.ejs')%>
